@@ -36,7 +36,7 @@ const { className, posts, fluid } = Astro.props;
               .filter((author) =>
                 post.data.authors
                   .map((author: string) => slugify(author))
-                  .includes(slugify(author.data.title))
+                  .includes(slugify(author.data.title)),
               )
               .map((author) => (
                 <a
@@ -92,9 +92,9 @@ const { className, posts, fluid } = Astro.props;
             post.body?.slice(
               0,
               Number(
-                i === 0 && fluid != false ? summary_length * 2 : summary_length
-              )
-            )
+                i === 0 && fluid != false ? summary_length * 2 : summary_length,
+              ),
+            ),
           )}
           ...
         </p>

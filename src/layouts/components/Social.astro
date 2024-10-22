@@ -35,6 +35,8 @@ import {
   IoMail,
 } from "react-icons/io5";
 
+import { BiLogoTelegram } from "react-icons/bi";
+
 const {
   facebook,
   twitter,
@@ -67,10 +69,25 @@ const {
   address,
   skype,
   website,
+  telegram,
 } = source;
 ---
 
 <ul class={className}>
+  {
+    telegram && (
+      <li class="inline-block">
+        <a
+          aria-label="telegram"
+          href={telegram}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <BiLogoTelegram />
+        </a>
+      </li>
+    )
+  }
   {
     facebook && (
       <li class="inline-block">

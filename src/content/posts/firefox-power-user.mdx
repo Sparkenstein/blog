@@ -1,0 +1,140 @@
+---
+title: "Become a Firefox Power-User"
+description: "Lesser-Known Tips, Shortcuts, and Tricks"
+date: 2024-10-16T01:11:00Z
+image: "/images/posts/firefox/banner.webp"
+categories: ["tech"]
+authors: ["Prabhanjan"]
+tags: ["firefox", "browser", "tips"]
+draft: false
+---
+
+# Become a Firefox Power-User
+
+Lesser-Known Tips, Shortcuts, and Tricks
+
+It started with me having an argument with my friends about how firefox is getting broken every recently while chrome at least "just works". ofcourse some credit goes to google deliberately breaking their sites on firefox. I am an avid firefox user since my early days. Even as a casual internet user or a developer, firefox used to work well for me.
+
+To give it a try again, I went into a deep dive to find out some of the lesser-known tips/tricks about firefox. Hope this helps!
+
+### 1. Quick Search Through Bookmarks and History
+
+Firefox’s address bar (also known as the Awesome Bar) can do much more than just web searches. You can quickly search through your **bookmarks** or **browsing history** or even **open tabs** with the help of these special shortcuts:
+
+- Type `*` followed by your search term to filter **bookmarks**.
+
+![image](/images/posts/firefox/history.gif)
+
+- Type `^` followed by your query to search through **history**.
+
+![image](/images/posts/firefox/bookmarks.gif)
+
+- Type `%` to search through **open tabs**.
+
+![image](/images/posts/firefox/tabs.gif)
+
+This can save you time when you want to find a saved page without having to navigate through menus.
+
+### 2. userChrome.css
+
+userChrome.css is not as widely known as any other firefox feature. Primarily because it's only use is to change how firefox looks. Not to mention, the word 'Chrome' in it might throw anyone off, thinking it has something to do with the Chrome browser. It comes from the word [Chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome).
+
+For example [migueravila/SimpleFox](https://github.com/migueravila/SimpleFox):
+
+![Clean](https://github.com/migueravila/SimpleFox/blob/master/assets/oneline.png?raw=true)
+
+Or [akshat46/FlyingFox](https://github.com/akshat46/FlyingFox):
+
+![FlyingFox](https://github.com/akshat46/FlyingFox/raw/master/img/demo-hover.gif)
+
+You can customize firefox down to any mouse hover or context menu item.
+
+### 3. Set Search Keywords for Bookmarks
+
+Now this one is a REALLY powerful feature and my personal favourite. If you find yourself googling/ddging/github searching/reddit searching a lot,
+and you don't like to type in google hacks (site:reddit.com keyword) everytime, you can directly target the website's search bar from your address bar.
+
+Github example:
+
+1. Go to the site you want to quick-search, try to get it's `search` url, for github its: https://github.com/search?q=QUERY&type=repositories
+2. feel free to remove the uneccessary parts, I will keep the `type=Repo` here, for filtering more.
+3. Bookmark this URL in your favourite way, go to bookmark manager (Ctrl + Shift + O)
+4. Find the bookmark that we saved, and scrool down you should see `Keywords` input box, you can use anything here, except the keywords that are already in the bookmarked URL
+
+Pretty useful for multi-tasking, I'd say
+
+![Manager](/images/posts/firefox/manager.png)
+
+5. I will use `gh` and save. The only change I need after this is replacing the dummy QUERY with %s.
+6. After this, I can just type `gh myquery` in URL bar and it will act as a direct github search.
+
+![Search](/images/posts/firefox/search.png)
+
+Freaking amazing feature.
+
+### 4. Picture-in-Picture (PiP) Mode for Videos
+
+This one is pretty well-known, you must have seen an icon at the bottom right when viewing a video. The shortcut for PiP mode is `Ctrl + Shift + ]`
+
+![PiP Mode](/images/posts/firefox/PiP.png)
+
+### 5. Use Firefox Containers for Better Privacy
+
+This used to need a plugin called **Multi-Account Containers**, but Firefox now has built-in support for multi-account containers.
+Most of the time, these are neglected, but for power-users containers do result in a cleaner browsing experience.
+
+![Containers](/images/posts/firefox/containers.png)
+
+You can assign sites to specific containers, such as work, shopping, or banking, making it easier to manage accounts, you can also create
+your own custom containers. Give it a try, you might like it
+
+### 6. Tab and window control
+
+I don't know if many people know this, but accidentally closing any tab or tabs, can be reopened with just 1 shortcut `Ctrl + Shift + T`.
+You can also press `Ctrl + W` to close current tab.
+
+If you have closed entire window (needs at least one instance of firefox open), you can press `Ctrl + Shift + N` to get the entire window and it's tabs back.
+
+1. You can also `middle mouse button` click on any link to open it in new tab,
+2. You can `middle mouse button` click to close any tab
+3. Click `Shift + Middle mouse` to open link in new tab AND switch to it
+4. Press `Alt` + Scroll wheel to navigate between history.
+
+Feel free to add more
+
+### 7. Text control
+
+Ever thought about selecting parts of text on multiple lines? Guess what, it's possible with firefox. Just press and hold `Ctrl` and go ahead selecting any random chunk
+of text you want. Firefox will allow you selecting any text in this way:
+
+![Text](/images/posts/firefox/text.png)
+
+### 8. Built-in Screenshot Tool
+
+No need for extensions—Firefox has a built-in **screenshot tool** that lets you capture an entire webpage or a specific section:
+
+- Press `Ctrl + Shift + S` to activate the tool.
+- You can choose to save the screenshot directly or copy it to your clipboard for immediate use.
+
+This is handy for quickly sharing snippets of web content or archiving important information.
+
+### 9. Use Betterfox
+
+This is completely optional, but I have been using [Betterfox](https://github.com/yokoffing/Betterfox) for quiet a while now, and I can say that it's actually useful
+the more you dive in. Who doesn't like additional security settings or last bit of performance we can extract?
+
+But again, completely optional and requirest going through JS source code for configuration, you have been warned!
+
+### 10. Shortcuts
+
+Firefox has bajillions of shortcuts. You may not be able to navigate around like vim, but you can get around pretty much any basic task with just shortcut. And I am not talking about just Copy/Paste shortcut.
+
+Did you know you know the difference between `Ctrl + F` and `Ctrl + G` ? Many such shortcuts are not well know and you SHOULD look into them [Official docs](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly) is a good first place to start
+
+---
+
+### Final Thoughts
+
+While firefox may have less than 9% market share, it's still an amazing browser. As a power user it's an amazing tool to browse the web, not to mention the vast ocean of add-ons.
+Add-ons do deserve it's own post so I won't talk about it here. I would still prefer if firefox improves it's web-developer experince. After working with both Chrome and Firefox for
+past 8 years, I can say that Chrome has somewhat comfortable development experience for developers.
