@@ -1,7 +1,7 @@
 ---
 title: "I am Prabhanjan, a full-stack web/rust developer"
 meta_title: "About"
-image: "/images/author.png"
+image: "/images/author.webp"
 draft: false
 
 what_i_do:

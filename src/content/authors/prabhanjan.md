@@ -1,6 +1,6 @@
 ---
 title: Prabhanjan
-image: /images/authors/john-doe.jpg
+image: /images/authors/spark.avif
 description: Owner, Admin
 social:
   twitter: ""
